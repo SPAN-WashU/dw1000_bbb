@@ -14,6 +14,7 @@
  *
  * Written by:
  * Anh Luong <luong@eng.utah.edu>
+ * Peter Hillyard <peterhillyard@gmail.com>
  */
 
 #include "platform.h"
