@@ -51,7 +51,7 @@ static uint8 tx_msg[] = {0xC5, 0, 'D', 'E', 'C', 'A', 'W', 'A', 'V', 'E', 0, 0};
 #define BLINK_FRAME_SN_IDX 1
 
 /* Inter-frame delay period, in milliseconds. */
-#define TX_DELAY_MS 1000
+#define TX_DELAY_MS 2000
 
 /**
  * Application entry point.
@@ -75,6 +75,7 @@ int main(void)
 
     /* Configure DW1000. See NOTE 3 below. */
     dwt_configure(&config);
+    dwt_setleds(0b00000011);
 
     printf("%s\n", APP_NAME);
 
