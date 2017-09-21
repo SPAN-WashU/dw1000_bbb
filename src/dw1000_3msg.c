@@ -531,7 +531,7 @@ static void responderTask(unsigned long exp_number, char mode) {
 
                         /***** FILE OPERATIONS *****/
 
-                        saveChannelInfoToFile(filename, rxInfo, &timestamps, 3, 2);
+                        saveChannelInfoToFile(filename, rxInfo, &timestamps, 4, 2);
                         printf("done writing\n");
                         printf("\n");
                     }
