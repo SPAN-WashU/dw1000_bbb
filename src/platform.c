@@ -86,6 +86,12 @@ int spi_set_rate_high (void)
 int writetospi(uint16 headerLength, const uint8 *headerBuffer, uint32 bodylength, const uint8 *bodyBuffer)
 {
 	int status;
+	int i;
+
+	for (i = 0; i < 128; i++)
+	{
+		
+	}
 
 	uint8_t txbuf[headerLength+bodylength];
 	uint8_t rxbuf[headerLength+bodylength];

@@ -73,6 +73,7 @@ int main(void)
 
     /* Configure DW1000. */
     dwt_configure(&config);
+    dwt_setleds(0b00000011);
 
     printf("%s\n", APP_NAME);
 
@@ -113,7 +114,7 @@ int main(void)
             /* Clear good RX frame event in the DW1000 status register. */
             dwt_write32bitreg(SYS_STATUS_ID, SYS_STATUS_RXFCG);
 
-            printf("MSG Received! DATA: %s\n", rx_buffer);
+            printf("MSG Received! DATA: %s\r\n", rx_buffer);
         }
         else
         {
